@@ -3,9 +3,11 @@
 {% block title %} Start Survey {% endblock %}
 
 {% block content %}
-<form action="/start" method="GET">   
+
+<form action="/start" method="POST">   
     <h1>{{survey.title}}</h1>
     <p>{{survey.instructions}}</p>
     <button>Start Survey</button>
 </form>
+
 {% endblock %}

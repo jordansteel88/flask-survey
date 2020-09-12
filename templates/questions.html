@@ -9,7 +9,12 @@
           <label for="answer">{{choice}}</label>
           <input type="radio" name="answer" value="{{choice}}">
         {% endfor %}
-        <br>
+
+        {% if question.allow_text %}
+        <textarea name="text"></textarea>
+        {% endif %}
+
+        <br><br>
         <button>Continue</button>
     </form>
 {% endblock %}
